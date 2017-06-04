@@ -1,0 +1,43 @@
+-Capítulo 2 - Olá, Lambda
+    -2.1 - Loops de maneira nova
+        usuarios.forEach() => Recebe um objeto do Tipo Consumer
+
+        O java.util.function.Consumer é do Java 8, possui um único método chamado
+        accept. Consumir é realizar uma tarefa que faça sentido, que no caso, é 
+        pegar o objeto do tipo Usuario e consumi-lo
+
+        Lambdas são muito usados em interfaces com um unico método: Ex.:
+            Consumer<Usuario> mostrador = new Consumer<Usuario>() {
+                public void accept(Usuario u){
+                    sout(u.getNome());
+                }
+            }
+
+            Podemos fazer:
+
+            Consumer<Usuario> mostrador = (Usuario u) -> { sout(u.getNome()) }
+
+        Lambdas podem capturar valores de fora
+
+-Capítulo 3 - Interfaces Funcionais
+    Interfaces Java que possuem apenas um método abstrato, podem ser instanciadas em forma de lambda
+    Metodos de uma interface são public e abstract por padrão
+    Acima, é o que chamamos de Interface Funcional
+    
+    3.1 - Com Listeners
+        -
+
+    3.3 - Function Interface
+        -
+
+
+-Capitulo 4 - Dafault Methods
+    -Metodo em interfaces com codigo
+    -A interface Collection possui um novo método alem do forEach, que é o removeIf
+        -O removeIf recebe um "Predicate", essa interface testa objetos de um certo tipo,
+        retornando true ou false
+        -Se o Predicate retorna true, o removeIf remove o objeto da lista
+        -O removeIf não serve para lista imutáveis, ou seja, aquelas criadas com Arrays.asList()
+
+-Capitulo 5 - Ordenando no Java 8
+    -

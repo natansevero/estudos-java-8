@@ -42,6 +42,25 @@ public class Capitulo5 {
         // Forma 3
         Collections.sort(usuarios, (u1, u2) -> u1.getNome().compareTo(u2.getNome()));
         
-        // 5.2
+        // 5.3
+        // Forma 1
+        Comparator<Usuario> comparador3 = Comparator.comparing(u -> u.getNome());
+        usuarios.sort(comparador3);
+        
+        //Forma 2
+        usuarios.sort(Comparator.comparing(u -> u.getNome()));
+        
+        
+        // Ordenando em ordem natural
+        List<String> nomes = Arrays.asList("Natan", "Rudan", "Alexa");
+        nomes.sort(Comparator.naturalOrder());
+        
+        //  
+        
+        
+        
+        
+        
+        
     }
 }

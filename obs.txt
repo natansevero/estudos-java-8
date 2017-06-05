@@ -40,4 +40,16 @@
         -O removeIf não serve para lista imutáveis, ou seja, aquelas criadas com Arrays.asList()
 
 -Capitulo 5 - Ordenando no Java 8
+    -Ao criar um Comparator, ele tbm é uma "Functional Interface", podemos usar ele como lambda
+    -Usamos Comparator para servir de critério de comparador no método: Collections.sort(lista, comparador);
+
+    -Tbm podemos ter métodos estáticos em interfaces, a Comparator possui
+    -Temos o Comparator.comparing() q é uma fábrica de Comparators. Passo pra ele uma Lambda da 
+    interface Fucntion
+
+    -Para ordenar por "Ordem Natural", podemos passar para o método lista.sort() um
+    Comparator.naturalOrder();
+    -Tbm podemos ordenar em "ordem reversa" com o Comparator.reverseOrder();
+    -OBS.: Só funcnionam para tipos que implementam Comparable<T>
+
     -

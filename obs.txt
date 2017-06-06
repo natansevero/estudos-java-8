@@ -53,3 +53,14 @@
     -OBS.: Só funcnionam para tipos que implementam Comparable<T>
 
     -
+
+-Capitulo 6 - Method References
+    -Podemos passa apenas uma referencia de um método para o Lambda.
+    -O Method Reference é traduzido para uma Functional Interface
+    
+    -O método serve para criar um fluxo de comparação para um sort. Ex.: Se ao comparar pelos
+    ponto e der empate, compare pelo nome e ordene.
+
+    -Tbm podemos ter "Method References" para objetos de instancia
+
+    -
